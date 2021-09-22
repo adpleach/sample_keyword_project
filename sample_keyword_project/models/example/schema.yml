@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+    - name: stg_keyword_extraction
+      description: |
+        The `stg_keyword_extraction` model calculates metrics and dimensions pertaining to the keywords in text data.
+      columns:
+        - name: id
+          tests:
+          - unique
+          - not_null  
+
+    - name: final_keyword_extraction
+      description: |
+        The `final_keyword_extraction` model contains metrics and dimensions pertaining to the keywords identified in text data.
+      columns:
+          - name: keyword_id
+            tests:
+                - unique
+                - not_null
