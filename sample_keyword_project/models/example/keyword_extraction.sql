@@ -18,8 +18,8 @@ with unpivoted as (
 )
 select
 
-  {{ dbt_utils.surrogate_key(['id', 'keyword']) }}
-    as keyword_id,
+  {{ dbt_utils.surrogate_key(['id', 'sentence_text', 'keyword']) }}
+    as keyword_sentence_id,
   id,
   author,
   url,
