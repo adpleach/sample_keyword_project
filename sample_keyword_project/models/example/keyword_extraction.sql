@@ -6,7 +6,7 @@ with unpivoted as (
       field_name='keyword',
       value_name='details',
       exclude=[
-        'id',
+        'post_id',
         'author',
         'url',
         'title',
@@ -18,9 +18,9 @@ with unpivoted as (
 )
 select
 
-  {{ dbt_utils.surrogate_key(['id', 'sentence_text', 'keyword']) }}
+  {{ dbt_utils.surrogate_key(['post_id', 'sentence_text', 'keyword']) }}
     as keyword_sentence_id,
-  id,
+  post_id,
   author,
   url,
   title,

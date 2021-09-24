@@ -6,8 +6,8 @@ with base_posts as(
 
 mentions as (
     select
-        sentence_keyword_id,
-        id,
+        sentence_id,
+        post_id,
         author,
         url,
         title,
