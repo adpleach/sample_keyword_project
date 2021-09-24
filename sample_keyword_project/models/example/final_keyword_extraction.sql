@@ -10,7 +10,7 @@ with unpivoted as (
         'author',
         'url',
         'title',
-        'selftext'
+        'sentence_text'
       ],
       remove = []
     ) 
@@ -26,7 +26,7 @@ select
   title,
   keyword,
   details:category :: text as keyword_category,
-  selftext,
+  sentence_text,
   details:substring :: text as match_substring,
   details:start_position :: integer as start_position,
   details:end_position  :: integer as end_position

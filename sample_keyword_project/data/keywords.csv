@@ -1,3 +1,4 @@
-keyword,keyword_regex,keyword_category
+keyword,additional_regex,category
 api,application program interface,pipeline
-data engineering,DE,subject
+data engineering,\sde\s,subject
+airflow,\saf\s,orchestration
