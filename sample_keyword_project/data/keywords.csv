@@ -40,7 +40,7 @@ seaweedfs,,file system
 lizardfs,,file system
 apache avro,avro,formats
 apache parquet,parquet,formats
-apache orc,orc,formats
+apache orc,\sorc\s,formats
 apache thrift,thrift,formats
 apache arrow,arrow,formats
 capn proto,captain proto,formats
