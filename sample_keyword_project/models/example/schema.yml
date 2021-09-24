@@ -11,11 +11,11 @@ models:
           - unique
           - not_null  
 
-    - name: base_posts
+    - name: base_post_sentences
       description: |
-        The `base_posts` model contains metrics and dimensions pertaining to reddit posts and the flat text data by sentence.
+        The `base_post_sentences` model contains metrics and dimensions pertaining to reddit posts and the flat text data by sentence.
       columns:
-        - name: sentence_keyword_id
+        - name: sentence_id
           tests:
           - unique
           - not_null  
@@ -24,7 +24,7 @@ models:
       description: |
         The `stg_keyword_extraction` model calculates metrics and dimensions pertaining to the keywords in text data.
       columns:
-        - name: sentence_keyword_id
+        - name: sentence_id
           tests:
           - unique
           - not_null  

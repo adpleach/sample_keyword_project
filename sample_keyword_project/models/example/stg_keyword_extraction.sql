@@ -1,7 +1,7 @@
 {%- set query_results = dbt_utils.get_query_results_as_dict('select keyword, keyword_regex, keyword_category from ' ~ ref('base_keywords')) -%}
 
 with base_posts as(
-    select * from {{ ref('base_posts') }}
+    select * from {{ ref('base_post_sentences') }}
 ),
 
 mentions as (
