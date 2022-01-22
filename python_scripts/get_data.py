@@ -1,4 +1,3 @@
-# %%
 import pandas
 import itertools
 
@@ -19,7 +18,7 @@ if __name__ == "__main__":
     gen = api.search_submissions(subreddit='dataengineering')
     df = pandas.DataFrame([thing.d_ for thing in itertools.islice(gen, 500)])
     df.selftext = df.selftext.str.replace('\\n', ' ')
-    df[cols].to_csv("sample_keyword_project/data/posts.csv")
+    df[cols].to_csv("posts.csv")
 
 # Complete list of columns returned:
     # all_awardings

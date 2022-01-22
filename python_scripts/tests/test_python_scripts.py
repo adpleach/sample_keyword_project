@@ -1,4 +1,4 @@
-from dbt_reddit import __version__
+from python_scripts import __version__
 
 
 def test_version():
