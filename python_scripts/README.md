@@ -6,7 +6,7 @@ This poetry project contains two scripts and associated package management files
 
 ### Installation
 - pip install poetry
-- move to python_scripts directory
+- change directory to python_scripts
 - poetry install
 
 ### Running a script
