@@ -1,3 +1,15 @@
+### Introduction
+
+### Installation
+
+### Running the models
+
+### Dependencies
+- dbt-labs/dbt_utils >= 0.7.0
+
+*******
+Information below is provided by dbt when a new project is started
+*******
 Welcome to your new dbt project!
 
 ### Using the starter project
